@@ -1,4 +1,3 @@
-
 public class WidgetInfo {
 
 	public static final int WIDGET = 320;

@@ -5,15 +5,10 @@ import org.powerbot.core.event.listeners.PaintListener;
 import org.powerbot.core.script.ActiveScript;
 import org.powerbot.game.api.Manifest;
 import org.powerbot.game.api.methods.input.Mouse;
-import org.powerbot.game.api.methods.input.Mouse.Speed;
 import org.powerbot.game.api.methods.tab.Skills;
 
-@Manifest(authors = { "OneLuckyDuck" }, name = "Skill Data")
+@Manifest(authors = { "OneLuckyDuck" }, name = "SkillData Example")
 public class Script extends ActiveScript implements PaintListener {
-	
-	public void onStart() {
-		Mouse.setSpeed(Speed.FAST);
-	}
 
 	@Override
 	public int loop() {
@@ -27,5 +22,4 @@ public class Script extends ActiveScript implements PaintListener {
 		g.fillOval(p.x - 3, p.y - 3, 6, 6);
 
 	}
-
 }
