@@ -13,7 +13,7 @@ public class SkillData {
 
 	public static int getRemainderExperience(final int index) {
 		setWidget(index);
-		if (!(Tabs.getCurrent() == Tabs.STATS)) {
+		if(Tabs.getCurrent() != Tabs.STATS) {
 			Tabs.STATS.open();
 		}
 		final WidgetChild skills = Widgets.get(WidgetInfo.WIDGET,
@@ -30,7 +30,7 @@ public class SkillData {
 
 	public static int getExperience(final int index) {
 		setWidget(index);
-		if (!(Tabs.getCurrent() == Tabs.STATS)) {
+		if(Tabs.getCurrent() != Tabs.STATS) {
 			Tabs.STATS.open();
 		}
 		final WidgetChild skills = Widgets.get(WidgetInfo.WIDGET,
@@ -47,7 +47,7 @@ public class SkillData {
 
 	public static int getTotalExperience() {
 		setWidget(SkillIndices.TOTAL_LEVEL);
-		if (!(Tabs.getCurrent() == Tabs.STATS)) {
+		if(Tabs.getCurrent() != Tabs.STATS) {
 			Tabs.STATS.open();
 		}
 		final WidgetChild skills = Widgets.get(WidgetInfo.WIDGET,
@@ -63,7 +63,7 @@ public class SkillData {
 	}
 
 	public static int getTotalLevel() {
-		if (!(Tabs.getCurrent() == Tabs.STATS)) {
+		if(Tabs.getCurrent() != Tabs.STATS) {
 			Tabs.STATS.open();
 		}
 		final WidgetChild skills = Widgets.get(WidgetInfo.WIDGET,
@@ -79,7 +79,7 @@ public class SkillData {
 
 	public static int getRealLevel(final int index) {
 		setWidget(index);
-		if (!(Tabs.getCurrent() == Tabs.STATS)) {
+		if(Tabs.getCurrent() != Tabs.STATS) {
 			Tabs.STATS.open();
 		}
 		final WidgetChild skills = Widgets.get(WidgetInfo.WIDGET,
@@ -96,7 +96,7 @@ public class SkillData {
 
 	public static int getLevel(final int index) {
 		setWidget(index);
-		if (!(Tabs.getCurrent() == Tabs.STATS)) {
+		if(Tabs.getCurrent() != Tabs.STATS) {
 			Tabs.STATS.open();
 		}
 		final WidgetChild skills = Widgets.get(WidgetInfo.WIDGET,
